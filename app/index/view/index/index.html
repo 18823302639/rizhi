@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>欢迎来到我的日记管理系统</title>
+    <style>
+        th{text-align:center;}
+    </style>
+</head>
+<body>
+<div class="container ">
+    <table class="table table-warning text-center ">
+        <tr class="active">
+            <th> <a href="{:url('index/landing')}"> {$Request.session.name}    </a>   </th>
+            <th ><a href="{:url('index/write')}">写日志/文章</a> </th>
+        </tr>
+    </table>
+    <table class="table table-hover table-bordered text-center ">
+        <tr>
+            <th style="width:10%">发布类型</th>
+            <th>发布内容</th>
+            <th style="width:10%">发布作者</th>
+            <th style="width:10%">发布时间</th>
+            <th style="width:20%">操作</th>
+        </tr>
+        <tr>
+            <td>文章</td>
+            <a href="">
+            <td>123</td>
+            </a>
+            <td>xiaoxuan</td>
+            <td>2018-08-12</td>
+            <td>
+                <a href=""><button class="btn btn-default">删除</button></a><br>
+                <a href=""><button class="btn btn-default">修改</button></a>
+            </td>
+        </tr>
+        {volist name="res" id="vo"}
+            <tr>
+                <td>文章</td>
+                <td>
+                    {php}echo mb_substr($vo['pr_ccontent'],0,120,'utf-8'); {/php}
+                </td>
+                <td>{$vo.pr_usname}</td>
+                <td>{$vo.pr_ctime}</td>
+                <td>
+                    <a href="{:url('index/details','pc_id='.$vo['pr_id'])}"><button class="btn btn-default">查看</button></a>
+                    <a href="{:url('index/write')}"><button class="btn btn-default">新增</button></a><br>
+                    <a href="{:url('index/upd')}"><button class="btn btn-default">修改</button></a>
+                    <a href="{:url('index/del')}"><button class="btn btn-default">删除</button></a>
+                </td>
+            </tr>
+        {/volist}
+    </table>
+</div>
+
+
+</body>
+</html>

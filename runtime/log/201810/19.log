@@ -1,0 +1,111 @@
+---------------------------------------------------------------
+[ 2018-10-19T05:18:16+08:00 ] 106.14.115.254 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.051342s][吞吐率：19.48req/s] [内存消耗：5,704.84kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'www.xiaoxuannhs.xyz',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000424s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2018-10-19T07:09:02+08:00 ] 47.100.36.239 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.028279s][吞吐率：35.36req/s] [内存消耗：5,704.52kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X)',
+  'host' => 'www.xiaoxuannhs.xyz',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.002549s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2018-10-19T09:18:46+08:00 ] 47.74.253.164 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.037424s][吞吐率：26.72req/s] [内存消耗：5,704.85kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'www.xiaoxuannhs.xyz',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001831s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000409s ]

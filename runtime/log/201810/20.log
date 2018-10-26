@@ -1,0 +1,505 @@
+---------------------------------------------------------------
+[ 2018-10-20T08:02:23+08:00 ] 47.92.155.0 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.062123s][吞吐率：16.10req/s] [内存消耗：5,704.52kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X)',
+  'host' => 'www.xiaoxuannhs.xyz',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001502s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.022181s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[ 2018-10-20T09:25:34+08:00 ] 47.74.253.164 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.030689s][吞吐率：32.58req/s] [内存消耗：5,704.85kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'www.xiaoxuannhs.xyz',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2018-10-20T16:20:41+08:00 ] 52.53.201.78 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.086572s][吞吐率：11.55req/s] [内存消耗：5,704.65kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.xiaoxuannhs.xyz',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000669s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+[ 2018-10-20T16:30:59+08:00 ] 121.34.49.179 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.032366s][吞吐率：30.90req/s] [内存消耗：5,706.84kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.xiaoxuannhs.xyz',
+  'connection' => 'keep-alive',
+  'purpose' => 'prefetch',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=k6hrqhg2fr0l33qrgpmf3rcdr0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.002193s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2018-10-20T16:31:00+08:00 ] 121.34.49.179 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.031043s][吞吐率：32.21req/s] [内存消耗：5,706.44kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.xiaoxuannhs.xyz',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=k6hrqhg2fr0l33qrgpmf3rcdr0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000375s ]
+---------------------------------------------------------------
+[ 2018-10-20T17:19:14+08:00 ] 121.34.49.179 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.059423s][吞吐率：16.83req/s] [内存消耗：3,609.00kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.xiaoxuannhs.xyz',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=k6hrqhg2fr0l33qrgpmf3rcdr0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to a member function index() on a non-object[/var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php:38]
+---------------------------------------------------------------
+[ 2018-10-20T17:19:50+08:00 ] 121.34.49.179 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.035425s][吞吐率：28.23req/s] [内存消耗：5,706.56kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.xiaoxuannhs.xyz',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=k6hrqhg2fr0l33qrgpmf3rcdr0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001719s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.001120s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2018-10-20T17:19:59+08:00 ] 121.34.49.179 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.031775s][吞吐率：31.47req/s] [内存消耗：5,706.27kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.xiaoxuannhs.xyz',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=k6hrqhg2fr0l33qrgpmf3rcdr0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000453s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[ 2018-10-20T17:20:03+08:00 ] 121.34.49.179 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.031084s][吞吐率：32.17req/s] [内存消耗：5,706.27kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.xiaoxuannhs.xyz',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=k6hrqhg2fr0l33qrgpmf3rcdr0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2018-10-20T17:20:09+08:00 ] 121.34.49.179 GET /index.php
+[ info ] www.xiaoxuannhs.xyz/index.php [运行时间：0.031786s][吞吐率：31.46req/s] [内存消耗：5,705.88kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.xiaoxuannhs.xyz',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=k6hrqhg2fr0l33qrgpmf3rcdr0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001420s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000387s ]
+---------------------------------------------------------------
+[ 2018-10-20T17:20:10+08:00 ] 121.34.49.179 GET /index.php/index/index/details/2.html
+[ info ] www.xiaoxuannhs.xyz/index.php/index/index/details/2.html [运行时间：0.026861s][吞吐率：37.23req/s] [内存消耗：5,181.80kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.xiaoxuannhs.xyz',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.xiaoxuannhs.xyz/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=k6hrqhg2fr0l33qrgpmf3rcdr0',
+)
+[ info ] [ PARAM ] array (
+  0 => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->details[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/details.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_id` = 2 LIMIT 1 [ RunTime:0.000375s ]
+---------------------------------------------------------------
+[ 2018-10-20T17:24:46+08:00 ] 121.34.49.179 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.031634s][吞吐率：31.61req/s] [内存消耗：5,706.84kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.xiaoxuannhs.xyz',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=k6hrqhg2fr0l33qrgpmf3rcdr0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'expire' => '36000',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000700s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000377s ]
+---------------------------------------------------------------
+[ 2018-10-20T20:52:44+08:00 ] 47.88.175.215 GET /
+[ info ] www.xiaoxuannhs.xyz/ [运行时间：0.031133s][吞吐率：32.12req/s] [内存消耗：5,705.02kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/www.xiaoxuannhs.xyz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (YunSecurityBot/1.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'www.xiaoxuannhs.xyz',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/www.xiaoxuannhs.xyz/app/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/www.xiaoxuannhs.xyz/app/index/view/index/index.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'expire' => '36000',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;dbname=practice;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pr_content` [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT * FROM `pr_content` WHERE  `pr_cflag` = 0 [ RunTime:0.000390s ]
