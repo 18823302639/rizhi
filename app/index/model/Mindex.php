@@ -49,7 +49,7 @@ class Mindex extends Model{
 
     }
 
-
+    //写入日志
     public function write_content(){
 
         if(Request::instance()->isPost()){
@@ -63,6 +63,34 @@ class Mindex extends Model{
             $sql = Db::table('pr_content')->insert($data);
             return $sql;
 
+        }
+
+    }
+
+    /*
+     *删除，判断是否有权限
+     *本人于管理员
+     */
+    public function mdel($pr_id){
+        $arr = Db::table('pr_content')
+                    ->field('pr_id,pr_usid')
+                    ->where('pr_id',$pr_id)
+                    ->where('pr_usid','eq',function ($query){
+                       $query->table('pr_username')->where('pr_name','eq',Session::get('name'))->field('id');
+                    })
+                    ->select();
+//        echo $arr;die;
+//        print_r($arr);die;
+        if(count($arr)>0){
+            //print_r($arr);
+            $obj = Db::table('pr_content')->where('pr_id',$pr_id)->fetchSql(false)->delete();
+            if($obj){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
         }
 
     }

@@ -5,6 +5,7 @@ use app\index\model\Mindex;
 use think\Controller;
 use think\Session;
 use think\Request;
+//use think\facade\Session;
 use think\Db;
 use think\Model;
 
@@ -27,11 +28,25 @@ class Index extends Controller
 
     }
 
+    /**
+     * @return mixed
+     * 模板继承
+     */
+    public function base(){
+        return $this->fetch();
+    }
+
     //构造函数
     function __construct()
     {
         parent::__construct();
 //        $m = new Mindex;
+    }
+
+    //退出session
+    public function unst(){
+        Session::delete('name');
+        $this->success("退出成功",url('index/index'));
     }
 
     //查看日志详情
@@ -84,7 +99,9 @@ class Index extends Controller
         return $this->fetch();
     }
 
-
+    public function cs(){
+        return $this->fetch();
+    }
 
     //写入
     public function write(){
@@ -98,6 +115,21 @@ class Index extends Controller
             }
         }
         return $this->fetch();
+
+    }
+
+
+    //删除
+    public function del($pr_id){
+        $m = new Mindex();
+        $obj = $m->mdel($pr_id);
+        var_dump($obj);
+        if($obj != false){
+            $this->success("已成功删除",url('index/index'));
+        }else{
+            $this->error("您没有权限删除别人的日志",url('index/index'));
+
+        }
 
     }
 
