@@ -1,4 +1,7 @@
 <?php
+/*
+ *日志记录
+ */
 namespace app\index\controller;
 
 use app\index\model\Mindex;
@@ -15,7 +18,6 @@ class Index extends Controller
     //前置操作
     protected $beforeActionList = [
 
-//        ''  => [],
         'yz'  => ['only' => 'write'],
 
     ];

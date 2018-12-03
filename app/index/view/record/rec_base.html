@@ -19,11 +19,11 @@
             <th ><a href="{:url('index/index')}">回到首页</a> </th>
             <th ><a href="{:url('Record/index')}">工作事项</a></th>
             <th>{if condition="$Request.session.name neq ''"}
-                    <a href="{:url('index/unst')}"> {$Request.session.name} /退出 </a>
+                <a href="{:url('index/unst')}"> {$Request.session.name} /退出 </a>
                 {else /} <a href="{:url('index/landing')}">登陆/注册 </a>
                 {/if}
             </th>
-            <th ><a href="{:url('index/write')}">写日志/文章</a> </th>
+            <th ><a href="{:url('Record/write')}">添加事项</a> </th>
         </tr>
     </table>
 </div>
