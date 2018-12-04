@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-03 23:22:40
+Date: 2018-12-04 22:54:19
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -58,15 +58,19 @@ INSERT INTO `pr_username` VALUES ('1', '肖轩', '123456');
 DROP TABLE IF EXISTS `record`;
 CREATE TABLE `record` (
   `rec_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '事项id',
-  `rec_title` varchar(100) DEFAULT NULL COMMENT '事项标题',
   `rec_content` text COMMENT '事项内容',
-  `rec_email_choice` enum('1','0') DEFAULT '0' COMMENT '0不发送邮件（默认），1发送邮件',
+  `rec_email_choice` enum('1','0') DEFAULT '0' COMMENT '是否发送邮件、0不发送邮件（默认），1发送邮件',
   `rec_email_time` datetime DEFAULT NULL COMMENT '发送邮件时间',
   `rec_write_time` datetime DEFAULT NULL COMMENT '写入时间',
   `rec_choice` enum('1','0') DEFAULT '0' COMMENT '0：待办（默认）、1：已完成',
+  `rec_level` enum('3','2','1','0') DEFAULT '0' COMMENT '事项紧急程度（0：事务性、1：重要不紧急、2：紧急不重要、3：重要且紧急）',
   PRIMARY KEY (`rec_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of record
 -- ----------------------------
+INSERT INTO `record` VALUES ('1', '发生开朗大方进啊撒旦看风景', '1', '2018-12-15 14:30:00', '2018-12-04 21:36:01', '0', '0');
+INSERT INTO `record` VALUES ('2', '', '0', '0000-00-00 00:00:00', '2018-12-04 22:09:57', '0', '0');
+INSERT INTO `record` VALUES ('3', '', '0', '0000-00-00 00:00:00', '2018-12-04 22:11:55', '0', '0');
+INSERT INTO `record` VALUES ('4', '', '0', '0000-00-00 00:00:00', '2018-12-04 22:29:27', '0', '0');

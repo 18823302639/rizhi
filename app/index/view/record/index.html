@@ -1,15 +1,110 @@
 {extend name="record/rec_base" /}
 
 {block name="content"}
-
+<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.staticfile.org/ionicons/2.0.1/css/ionicons.min.css">
 <div class="container-fluid">
 
-    <div class="container">
 
+    <div class="container">
+        <div class="col-md-10">
+            <form>
+                <div class="form-group">
+                    <div class="input-group">
+                        <labal class="input-group-addon">事项</labal>
+                        <input class="form-control" name="rec_content" type="text">
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="">事项紧急程度</label>
+                    <div class="input-group ">
+                        <select class="form-control" name="rec_level" id="">
+                            <option value="0">事务性事项</option>
+                            <option value="3">紧急且重要</option>
+                            <option value="2">紧急不重要</option>
+                            <option value="1">重要不紧急</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="">是否发送邮件</label>
+                    <div class="input-group ">
+                        发送： <input type="radio" name="rec_email_choice" value="1">
+                        不发送： <input type="radio" name="rec_email_choice" value="0">
+                    </div>
+
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="">发送时间</label>
+
+                    <div class="input-group col-md-4">
+                        <input type="datetime-local" name="rec_email_time">
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                   <buttom type="submit" class="btn btn-default" onclick="rec_tion()">点击提交</buttom>
+                </div>
+
+            </form>
+        </div>
+        <table class="table table-hover table-border">
+            <tr>
+                <th>事项紧急</th>
+                <th>事项内容</th>
+                <th>提醒时间</th>
+                <th>是否办结</th>
+                <th>操作</th>
+            </tr>
+            {volist name="arr" id="vo"}
+            <tr>
+                <td>{if condition=" $vo['rec_level']  eq 0"}事务性事项
+                    {elseif condition="$vo['rec_level'] eq 1" /}重要不紧急
+                    {elseif condition="$vo['rec_level'] eq 2" }紧急不重要
+                    {else /} 重要且紧急
+                    {/if}
+                </td>
+                <td>{$vo.rec_content}</td>
+                <td>{if condition="$vo['rec_email_choice'] eq 1" }{$vo['rec_email_time']} {else /}没有设置提醒 {/if}</td>
+                <td>{if condition="$vo.rec_choice eq 0"}待办{else /}办结{/if}
+
+                            <form method="post" action="demoform.php">
+                                <input type="checkbox" data-role="flipswitch" name="switch" id="switch">
+                            </form>
+
+                </td>
+                <td>
+                    <i class="icon ion-checkmark-round"></i>
+                    <i class="icon ion-close-round"></i>
+                </td>
+            </tr>
+            {/volist}
+        </table>
     </div>
 
 </div>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 
+
+<script>
+    function rec_tion(){
+        var url = "{:url('Record/write')}";
+        var data = $("form").serializeArray();
+        console.log(data);
+        $.ajax({
+            type:'post',
+            url:url,
+            dataType:'json',
+            data:data,
+            success: function (success){
+                console.log("成功"+success);
+            },
+            error:function(error){
+                console.log("错误："+error);
+            }
+        });
+    }
+
+</script>
 {/block}
 
 
