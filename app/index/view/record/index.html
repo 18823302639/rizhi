@@ -36,19 +36,24 @@
                 </div>
                 <div class="form-group col-md-3">
                     <label for="">发送时间</label>
-
                     <div class="input-group col-md-4">
                         <input type="datetime-local" name="rec_email_time">
                     </div>
                 </div>
                 <div class="form-group col-md-2">
-                   <buttom type="submit" class="btn btn-default" onclick="rec_tion()">点击提交</buttom>
+                   <buttom type="submit" class="btn btn-default" onclick="rec_tion('write')">点击提交</buttom>
                 </div>
-
             </form>
         </div>
         <table class="table table-hover table-border">
             <tr>
+                <th>
+                    <span onclick="onefn()">全选</span>
+                    <span onclick="ele()">/反选</span>
+                    <!--<span><input type="checkbox" name="">全选</span>-->
+                    <!--<span><input type="checkbox" name="">全不选</span>-->
+                    <!--<span><input type="checkbox" name="">反选</span>-->
+                </th>
                 <th>事项紧急</th>
                 <th>事项内容</th>
                 <th>提醒时间</th>
@@ -56,46 +61,59 @@
                 <th>操作</th>
             </tr>
             {volist name="arr" id="vo"}
-            <tr>
-                <td>{if condition=" $vo['rec_level']  eq 0"}事务性事项
-                    {elseif condition="$vo['rec_level'] eq 1" /}重要不紧急
-                    {elseif condition="$vo['rec_level'] eq 2" }紧急不重要
-                    {else /} 重要且紧急
-                    {/if}
-                </td>
-                <td>{$vo.rec_content}</td>
-                <td>{if condition="$vo['rec_email_choice'] eq 1" }{$vo['rec_email_time']} {else /}没有设置提醒 {/if}</td>
-                <td>{if condition="$vo.rec_choice eq 0"}待办{else /}办结{/if}
-
-                            <form method="post" action="demoform.php">
-                                <input type="checkbox" data-role="flipswitch" name="switch" id="switch">
-                            </form>
-
+            <tr class="tab-tr">
+                <td>
+                    <input type="checkbox" name="whole[]" value="{$vo.rec_id}" >
                 </td>
                 <td>
-                    <i class="icon ion-checkmark-round"></i>
-                    <i class="icon ion-close-round"></i>
+                    <select name="" id="">
+                        <option value="0" {if condition="$vo['rec_level'] eq 0"} selected = "selected" {/if} >事务性事项 </option>
+                        <option value="1" {if condition="$vo['rec_level'] eq 1"} selected = "selected" {/if} >重要不紧急 </option>
+                        <option value="2" {if condition="$vo['rec_level'] eq 2"} selected = "selected" {/if} >紧急不重要 </option>
+                        <option value="3" {if condition="$vo['rec_level'] eq 3"} selected = "selected" {/if} >重要且紧急 </option>
+                    </select>
+                </td>
+                <td>
+                    <input class="form-control" type="text" name="" value="{$vo.rec_content}" >
+                    </td>
+                <td>{if condition="$vo['rec_email_choice'] eq 1" } <input type="datetime-local" name="rec_email_time" value="{$vo['rec_email_time']}">  {else /}没有设置提醒 {/if}</td>
+                <td>{if condition="$vo.rec_choice eq 0"}待办{else /}办结{/if}
+                </td>
+                <td>
+                    <i class="icon ion-checkmark-round" onclick=""></i>
+                    <i class="icon ion-close-round" onclick=""></i>
                 </td>
             </tr>
             {/volist}
+            <tr>
+                <td>
+                    <span id="sndel">删除</span>
+                </td>
+                <td colspan="5">
+                    {$arr->render()}
+                </td>
+            </tr>
         </table>
+
     </div>
 
 </div>
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-
-
 <script>
-    function rec_tion(){
+    function rec_tion(abc){
+        // alert(abc);
+        // return ;
         var url = "{:url('Record/write')}";
         var data = $("form").serializeArray();
         console.log(data);
+        return ;
         $.ajax({
             type:'post',
             url:url,
             dataType:'json',
             data:data,
             success: function (success){
+                alert("操作成功");
                 console.log("成功"+success);
             },
             error:function(error){
@@ -103,6 +121,48 @@
             }
         });
     }
+
+    function onefn(){
+        var sa = $("input[name='whole[]']");
+        var sc = sa.prop("checked");
+        if( sc == false ){
+            sa.prop("checked",true);
+        }else{
+            sa.prop("checked",false);
+        }
+    }
+    function ele(){
+        ss = $("input[name='whole[]']");
+        for(var i in ss){
+            ss[i].checked=(ss[i].checked)?"":"checked";
+        }
+    }
+
+    $(function(){
+        $("#sndel").click(function(){
+            var boxarr = [];
+            $('input[name="whole[]"]:checked').each(function(){
+                boxarr.push($(this).val());
+            });
+            console.log(boxarr);
+            var url = "{:url('Record/rdel')}";
+            $.ajax({
+                type:'post',
+                url:url,
+                dataType:'json',
+                data:boxarr,
+                success:function(success){
+                    if(success == true){
+                        console.log("成功："+success);
+                    }
+                    console.log("失败："+success);
+                },
+                error:function(error){
+                    console.log("错误："+error);
+                }
+            });
+        });
+    });
 
 </script>
 {/block}
