@@ -21,6 +21,11 @@ class Record extends Controller
         return $this->view->fetch("record/rec_base");
     }
 
+    public function resel(){
+         $arr = Db::table('record')->order('rec_write_time desc')->select();
+        return $arr;
+    }
+
     public function index(){
         $arr = Db::table('record')->order("rec_write_time desc ")->paginate(10);
         if($arr){
@@ -33,19 +38,12 @@ class Record extends Controller
     public function write(){
 
         if(Request::instance()->isPost()){
-//            if(){
-//
-//            }
-
             $data = input('post.');
             $data['rec_write_time'] = date('Y/m/d H:i:s',time());
-//            if(judge == 2){
-//                $res =
-//            }
             $res = Db::table("record")->insert($data);
             if($res){
-                $arr = Db::table('record')->select();
-                return $arr;
+                $arr = $this->resel();
+                return json_encode($arr);
             }else{
                 return false;
             }
@@ -59,12 +57,15 @@ class Record extends Controller
 
         if(Request::instance()->isPost()){
 
-            $data = input('post.');
-//
-            $res = Db::table('record')->fetchSql(true)->delete($data);
+            $data = input('post./a');
+
+            print_r($data);
+            $res = Db::table('record')->fetchSql(false)->delete($data['data']);
+
             echo $res;
             if($res){
-                return true;
+                $arr = $this->resel();
+                return json_encode($arr);
             }else{
                 return false;
             }
